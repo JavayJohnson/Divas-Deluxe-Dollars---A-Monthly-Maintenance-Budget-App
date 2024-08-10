@@ -1,27 +1,57 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-   
-    
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diva's Deluxe Dollars Monthly Maintenance Budget App</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Diva's Deluxe Dollars</h1>
+        <p>Monthly Maintenance Budget App</p>
+    </header>
+    <form class="budget-form">
+        <label for="monthlyBudget">Monthly Budget:</label>
+        <input type="number" id="monthlyBudget" placeholder="Enter your monthly budget" required>
 
+        <label for="hairSalon">Hair Salon:</label>
+        <input type="number" id="hairSalon" placeholder="Enter hair salon expenses" required>
 
-        <div class="box" onclick="insertAmountSpent(1900)"></div>
+        <label for="nailSpa">Nail Spa:</label>
+        <input type="number" id="nailSpa" placeholder="Enter nail spa expenses" required>
 
-<input type="text" placeholder="Enter Dispersed Diva Dollars"><button class="submit">Submit</button>
+        <label for="skinCareproducts">Skin Care Products:</label>
+        <input type="number" id="skinCareproducts" placeholder="Enter skin care products cost" required>
 
-        <script src="app.js" async defer></script>
-        <script>
+        <label for="fitnessClass">Fitness Class:</label>
+        <input type="number" id="fitnessClass" placeholder="Enter fitness class cost" required>
 
+        <label for="wardrobeSubscriptions">Wardrobe Subscriptions:</label>
+        <input type="number" id="wardrobeSubscriptions" placeholder="Enter wardrobe subscription cost" required>
 
-            console.log("Welcome to my site")
-        </script>
-    </body>
+        <label for="facial">Facial:</label>
+        <input type="number" id="facial" placeholder="Enter facial treatment cost" required>
+
+        <label for="massage">Massage:</label>
+        <input type="number" id="massage" placeholder="Enter massage cost" required>
+
+        <label for="yoga">Yoga:</label>
+        <input type="number" id="yoga" placeholder="Enter yoga class cost" required>
+
+        <label for="foodSubscription">Food Subscription:</label>
+        <input type="number" id="foodSubscription" placeholder="Enter food subscription cost" required>
+
+        <label for="poppingChampagne">Popping Champagne:</label>
+        <input type="number" id="poppingChampagne" placeholder="Enter champagne popping cost" required>
+
+        <button type="submit">Calculate Balance</button>
+    </form>
+    <footer>
+        <p>Developed for the stylish and savvy!</p>
+    </footer>
+</div>
+<script src="budget.js"></script>
+</body>
 </html>
