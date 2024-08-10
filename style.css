@@ -3,34 +3,70 @@ body, h1, p, form, input, button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    flex-direction: column
 }
 
 body {
     font-family: 'Arial', sans-serif;
     background-color: black;
     color: white;
-    padding: 20px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Ensures the body takes at least the height of the viewport */
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border: 3px solid gold;
 }
 
 .container {
-    width: 100%;
-    max-width: 400px; /* Adjust width as needed */
-    margin: auto;
+    background-color: white;
     padding: 20px;
-    background-color: #000; /* Black background for the container */
-    border: 2px solid gold; /* Gold border for a luxe look */
+    border: 2px solid hotpink;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
 }
 
 header {
-    background-color: hotpink; /* Hot pink header */
+    background-color: hotpink;
     color: white;
+    padding: 10px;
     text-align: center;
-    padding: 20px;
+}
+
+.budget-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.budget-form label {
+    color: black;
+}
+
+.budget-form input {
+    padding: 10px;
+    border: 1px solid silver;
+}
+
+button {
+    padding: 10px;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: silver;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: black;
 }
