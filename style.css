@@ -27,6 +27,8 @@ body {
     padding: 20px;
     border: 2px solid hotpink;
     border-radius: 8px;
+    display: block;
+
 }
 
 header {
@@ -37,7 +39,7 @@ header {
 }
 
 .budget-form {
-    display: flex;
+    display: block;
     flex-direction: column;
     gap: 10px;
     margin-top: 20px;
