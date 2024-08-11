@@ -12,20 +12,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: column; /* Arrange everything in a vertical column */
+    min-height: 100vh; /* Ensure content covers full viewport height */
     padding: 20px;
     text-align: center; /* Center all text elements */
 }
 
 .main-container {
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     padding: 20px;
     border: 3px solid gold;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adds space between each container */
 }
 
 .container {
@@ -45,13 +46,7 @@ header {
     padding: 10px;
     text-align: center;
     width: 100%; /* Ensure header takes full width */
-}
-
-.content-wrapper {
-    display: flex;
-    flex-direction: column; /* Stack forms and budget vertically */
-    align-items: center;
-    width: 100%;
+    margin-bottom: 20px; /* Add margin to separate header from content */
 }
 
 .forms-section {
@@ -59,7 +54,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center the forms section */
-    margin-bottom: 20px;
+    gap: 20px; /* Adds space between the form sections */
 }
 
 .registration-form-section, .login-form-section, .budget-form-section {
@@ -67,7 +62,6 @@ header {
     padding: 20px;
     border: 2px solid hotpink;
     border-radius: 8px;
-    margin-bottom: 20px;
     width: 100%;
     max-width: 400px; /* Set a max width for all sections */
     text-align: left; /* Align text inside form sections to the left */
@@ -95,6 +89,30 @@ h2 {
     margin-bottom: 15px;
     border: 1px solid silver;
     border-radius: 4px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: green;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tooltip {
+    background-color: black;
+    color: white;
+    font-size: 0.8em;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+    margin-top: 5px;
 }
 
 button {
