@@ -14,13 +14,18 @@ body {
     align-items: center;
     height: 100vh;
     padding: 20px;
+    text-align: center; /* Center all text elements */
 }
 
 .main-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 500px;
     padding: 20px;
     border: 3px solid gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .container {
@@ -29,6 +34,9 @@ body {
     border: 2px solid hotpink;
     border-radius: 8px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content inside the container */
 }
 
 header {
@@ -36,17 +44,22 @@ header {
     color: white;
     padding: 10px;
     text-align: center;
+    width: 100%; /* Ensure header takes full width */
 }
 
 .content-wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack forms and budget vertically */
+    align-items: center;
+    width: 100%;
 }
 
 .forms-section {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 30%; /* Adjust width as needed */
+    align-items: center; /* Center the forms section */
+    margin-bottom: 20px;
 }
 
 .registration-form-section, .login-form-section, .budget-form-section {
@@ -55,10 +68,9 @@ header {
     border: 2px solid hotpink;
     border-radius: 8px;
     margin-bottom: 20px;
-}
-
-.budget-form-section {
-    width: 65%; /* Adjust width as needed */
+    width: 100%;
+    max-width: 400px; /* Set a max width for all sections */
+    text-align: left; /* Align text inside form sections to the left */
 }
 
 h2 {
@@ -102,6 +114,4 @@ button:hover {
 
 footer {
     text-align: center;
-    margin-top: 20px;
-    color: black;
-}
+    margin-top
