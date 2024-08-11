@@ -28,7 +28,6 @@ body {
     border: 2px solid hotpink;
     border-radius: 8px;
     display: block;
-
 }
 
 header {
@@ -38,9 +37,8 @@ header {
     text-align: center;
 }
 
-.budget-form form label, form input[type="number"]
- {
-    display: block;
+.budget-form {
+    display: flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 20px;
@@ -53,6 +51,8 @@ header {
 .budget-form input {
     padding: 10px;
     border: 1px solid silver;
+    border-radius: 4px;
+    width: 100%;
 }
 
 button {
@@ -62,6 +62,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 button:hover {
@@ -73,4 +74,3 @@ footer {
     margin-top: 20px;
     color: black;
 }
-

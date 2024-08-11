@@ -1,63 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Diva's Deluxe Dollars Monthly Maintenance Budget App</title>
-        <link rel="stylesheet" href="diva.css">
-        <script src="budget.js" prefer></script>
-
-    </head>
-
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diva's Deluxe Dollars Monthly Maintenance Budget App</title>
+    <link rel="stylesheet" href="diva.css">
+</head>
+<body>
+    <main class="main-container">
         <div class="container">
             <header>
                 <h1>Divas Deluxe Dollars</h1>
                 <p>Monthly Maintenance Budget App</p>
             </header>
-            <form class="budget-form">
-                <label for="monthlyBudget">Monthly Budget:</label>
-                <input type="number" id="monthlyBudget" placeholder="Enter monthly budget" required>
+            <div class="forms-container">
+                <!-- Registration Form -->
+                <section class="registration">
+                    <h2>Register</h2>
+                    <form id="registrationForm" class="form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-                <label for="hairSalon">Hair Salon:</label>
-                <input type="number" id="hairSalon" placeholder="Enter hair salon cost" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-                <label for="nailSpa">Nail Spa:</label>
-                <input type="number" id="nailSpa" placeholder="Enter nail spa cost" required>
+                        <label for="zip">Zip Code:</label>
+                        <input type="text" id="zip" name="zip" placeholder="Enter your zip code" required>
 
-                <label for="skinCareproducts">Skin Care Products:</label>
-                <input type="number" id="skinCareproducts" placeholder="Enter body care cost" required>
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" name="country" placeholder="Enter your country" required>
 
-                <label for="fitnessClass">Fitness Class:</label>
-                <input type="number" id="fitnessClass" placeholder="Enter fitness class cost" required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
-                <label for="wardrobeSubscriptions">Wardrobe Subscriptions:</label>
-                <input type="number" id="wardrobeSubscriptions" placeholder="Enter wardrobe cost" required>
+                        <button type="submit">Register</button>
+                    </form>
+                </section>
+                
+                <!-- Login Form -->
+                <section class="login">
+                    <h2>Login</h2>
+                    <form id="loginForm" class="form">
+                        <label for="loginEmail">Email:</label>
+                        <input type="email" id="loginEmail" name="loginEmail" placeholder="Enter your email" required>
 
-                <label for="facial">Facial:</label>
-                <input type="number" id="facial" placeholder="Enter facial cost" required>
+                        <label for="loginPassword">Password:</label>
+                        <input type="password" id="loginPassword" name="loginPassword" placeholder="Enter your password" required>
 
-                <label for="massage">Massage:</label>
-                <input type="number" id="massage" placeholder="Enter massage cost" required>
+                        <button type="submit">Login</button>
+                    </form>
+                </section>
 
-                <label for="yoga">Yoga:</label>
-                <input type="number" id="yoga" placeholder="Enter yoga class cost" required>
+                <!-- Budget Form -->
+                <section class="budget-form-section">
+                    <form class="budget-form">
+                        <label for="monthlyBudget">Monthly Budget:</label>
+                        <input type="number" id="monthlyBudget" placeholder="Enter monthly budget" required>
 
-                <label for="foodSubscription">Food Subscription:</label>
-                <input type="number" id="foodSubscription" placeholder="Enter organic food cost" required>
-<br>
-                <label for="poppingChampagne">Popping Champagne:</label>
-                <input type="number" id="poppingChampagne" placeholder="Enter champagne cost" required>
+                        <label for="hairSalon">Hair Salon:</label>
+                        <input type="number" id="hairSalon" placeholder="Enter hair salon cost" required>
 
-                <button type="submit">Calculate Balance</button>
-<br>
-            </form>
+                        <label for="nailSpa">Nail Spa:</label>
+                        <input type="number" id="nailSpa" placeholder="Enter nail spa cost" required>
+
+                        <label for="skinCareproducts">Skin Care Products:</label>
+                        <input type="number" id="skinCareproducts" placeholder="Enter body care cost" required>
+
+                        <label for="fitnessClass">Fitness Class:</label>
+                        <input type="number" id="fitnessClass" placeholder="Enter fitness class cost" required>
+
+                        <label for="wardrobeSubscriptions">Wardrobe Subscriptions:</label>
+                        <input type="number" id="wardrobeSubscriptions" placeholder="Enter wardrobe cost" required>
+
+                        <label for="facial">Facial:</label>
+                        <input type="number" id="facial" placeholder="Enter facial cost" required>
+
+                        <label for="massage">Massage:</label>
+                        <input type="number" id="massage" placeholder="Enter massage cost" required>
+
+                        <label for="yoga">Yoga:</label>
+                        <input type="number" id="yoga" placeholder="Enter yoga class cost" required>
+
+                        <label for="foodSubscription">Food Subscription:</label>
+                        <input type="number" id="foodSubscription" placeholder="Enter organic food cost" required>
+                        <br>
+                        <label for="poppingChampagne">Popping Champagne:</label>
+                        <input type="number" id="poppingChampagne" placeholder="Enter champagne cost" required>
+                        
+                        <button type="submit">Calculate Balance</button>
+                        <br>
+                    </form>
+                </section>
+            </div>
             <footer>
                 <p>💃🏼Developed for the high maintenance budget savvy, DIVAS!💃🏼</p>
                 <p>Copyright 2024 All Rights Reserved</p>
             </footer>
         </div>
-    </body>
-
+    </main>
+    <script src="script.js"></script> <!-- Merged JavaScript file -->
+</body>
 </html>
