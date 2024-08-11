@@ -58,8 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const username = registrationForm.elements['name'].value;
         const email = registrationForm.elements['email'].value;
-        const zip = registrationForm.elements['zip'].value;
-        const country = registrationForm.elements['country'].value;
         const password = registrationForm.elements['password'].value;
         const confirmPassword = registrationForm.elements['confirmPassword'].value;
         const termsAccepted = registrationForm.elements['terms'].checked;
@@ -68,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const usernameRegex = /^[a-zA-Z0-9]{4,}$/;
         const uniqueChars = new Set(username).size;
         if (!usernameRegex.test(username) || uniqueChars < 2) {
-            alert("Username must be at least four characters long, contain at least two unique characters, and not include special characters or spaces.");
+            alert("Username must be at least four characters long, and not include special characters or spaces.");
             return;
         }
 
@@ -80,14 +78,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Password Validation
-        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{12,}$/;
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{4,}$/;
         if (!passwordRegex.test(password) || password.toLowerCase().includes("password") || password.toLowerCase().includes(username.toLowerCase())) {
-            alert("Password must be at least 12 characters long, contain at least one uppercase letter, one lowercase letter, one number, one special character, and cannot contain the word 'password' or your username.");
+            alert("Password must be at least 4 characters long, contain at least one uppercase letter, one lowercase letter, one number, one special character, and cannot contain the word 'password' or your username.");
             return;
         }
 
         if (password !== confirmPassword) {
-            alert("Passwords do not match.");
+            alert("Passwords do not match. Please ensure both password fields are identical.");
             return;
         }
 
