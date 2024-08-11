@@ -13,11 +13,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 20px;
 }
 
 .main-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 1200px;
     padding: 20px;
     border: 3px solid gold;
 }
@@ -27,7 +28,7 @@ body {
     padding: 20px;
     border: 2px solid hotpink;
     border-radius: 8px;
-    display: block;
+    width: 100%;
 }
 
 header {
@@ -37,22 +38,51 @@ header {
     text-align: center;
 }
 
-.budget-form {
+.content-wrapper {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
+    justify-content: space-between;
 }
 
-.budget-form label {
+.forms-section {
+    display: flex;
+    flex-direction: column;
+    width: 30%; /* Adjust width as needed */
+}
+
+.registration-form-section, .login-form-section, .budget-form-section {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid hotpink;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.budget-form-section {
+    width: 65%; /* Adjust width as needed */
+}
+
+h2 {
+    color: hotpink;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.registration-form, .login-form, .budget-form {
+    width: 100%;
+}
+
+.registration-form label, .login-form label, .budget-form label {
+    display: block;
+    margin-bottom: 5px;
     color: black;
 }
 
-.budget-form input {
+.registration-form input, .login-form input, .budget-form input {
+    width: 100%;
     padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid silver;
     border-radius: 4px;
-    width: 100%;
 }
 
 button {
@@ -63,6 +93,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+    width: 100%;
 }
 
 button:hover {
