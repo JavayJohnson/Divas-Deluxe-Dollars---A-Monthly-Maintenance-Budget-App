@@ -20,25 +20,29 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 800px;
-    padding: 20px;
-    border: 3px solid gold;
+    max-width: 1000px;
+    padding: 20px;  /* Space between the gold border and the content */
+    border: 10px solid gold;  /* Even gold border all the way around */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px; /* Adds space between each container */
+    gap: 20px;  /* Adds space between each container */
+    border-radius: 8px;
 }
 
 .container {
     background-color: white;
-    padding: 20px;
-    border: 2px solid hotpink;
+    padding: 20px;  /* Internal padding for content inside the hotpink border */
+    border: 5px solid hotpink;  /* Even hotpink border all the way around */
     border-radius: 8px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content inside the container */
+    align-items: center;  /* Center content inside the container */
+    margin: 0;  /* Remove default margin */
+    box-sizing: border-box;  /* Ensure padding and border are included in the width */
 }
+
 
 header {
     background-color: hotpink;
@@ -91,6 +95,16 @@ h2 {
     border-radius: 4px;
 }
 
+.registration-form input[type="checkbox"] {
+    width: auto; /* Prevent the checkbox from taking full width */
+    margin-right: 10px; /* Add space between the checkbox and the label */
+}
+
+.registration-form label[for="terms"] {
+    display: inline-block;
+    vertical-align: middle; /* Align the checkbox with the text */
+}
+
 .error-message {
     color: red;
     font-size: 0.9em;
@@ -128,6 +142,16 @@ button {
 
 button:hover {
     background-color: silver;
+}
+
+.login-form-section {
+    margin-bottom: 20px; /* Add margin between the login button and budget input container */
+}
+
+.budget-form-section {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {
