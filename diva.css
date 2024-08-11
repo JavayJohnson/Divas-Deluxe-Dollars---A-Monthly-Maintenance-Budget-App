@@ -38,7 +38,8 @@ header {
     text-align: center;
 }
 
-.budget-form {
+.budget-form form label, form input[type="number"]
+ {
     display: block;
     flex-direction: column;
     gap: 10px;
@@ -72,3 +73,4 @@ footer {
     margin-top: 20px;
     color: black;
 }
+
