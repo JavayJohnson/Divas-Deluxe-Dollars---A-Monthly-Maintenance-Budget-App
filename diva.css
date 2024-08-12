@@ -51,13 +51,26 @@ header {
     margin-bottom: 20px; 
 }
 
-.forms-section {
+
+
+
+footer .diva-image {
+    width: 100%; /* Makes the image slightly smaller than its container */
+    max-width: calc(100% - 520px); /* Ensures the image width is a bit smaller than the budget border */
+    height: auto;
+    border-radius: 8px; /* Applies the border-radius */
+    display: center;
+    margin: 10px auto; /* Adds margin above and below, centers horizontally */
+    border: 5px solid hotpink; /* Matches the budget form's border */
+}
+
+/* .forms-section {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center; 
     gap: 20px; 
-}
+} */
 
 .registration-form-section, .login-form-section, .budget-form-section {
     background-color: white;
