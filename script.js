@@ -26,13 +26,16 @@ document.addEventListener('DOMContentLoaded', function() {
         // Construct the output message based on the remaining balance
         let outputMessage;
         if (remainingBalance > 0) {
-            outputMessage = `${remainingBalance} is positive. You have $${remainingBalance} left! Keep slaying, Diva! You are stacking RACKS on RACKS on RACKS! 💵💵💵`;
+            outputMessage = `${remainingBalance} You have $${remainingBalance} left! Keep slaying, Diva! You are stacking cash! Millionaire Mode!💵💵💵`;
         } else if (remainingBalance === 0) {
-            outputMessage = `$${remainingBalance} is zero. Neutral. That's What's up! You have successfully balanced your $${monthlyBudget} Diva Well-being Monthly Maintenance Budget to $${remainingBalance}! Stay beautiful Girlie!`;
+            outputMessage = `$${remainingBalance} That's What's up! You have successfully balanced your budget of $${monthlyBudget} Divas Deluxe Dollars to $${remainingBalance}! Stay beautiful Diva!`;
         } else {
-            outputMessage = `$${remainingBalance} is negative. So, you need to cut back, or either get a part-time job fr fr. You have gone over your $${monthlyBudget}! I'm just keeping it 100 Sis, you are NOT managing your money well! Chill on 🍾🥂 popping bottles 🍾🥂 for a while.`;
+            outputMessage = `$${remainingBalance} So, you need to cut back, or either get a part-time job for real. You have gone over your monthly budget of $${monthlyBudget} You're NOT managing your money well! No 🍾🥂 popping CHAMPAGNE bottles 🍾🥂.`;
         }
 
+
+
+        
         // Display the message using an alert
         alert(outputMessage);
     };
