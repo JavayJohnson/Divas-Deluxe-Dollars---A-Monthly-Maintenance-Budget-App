@@ -33,9 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
             outputMessage = `$${remainingBalance} So, you need to cut back, or either get a part-time job for real. You have gone over your monthly budget of $${monthlyBudget} You're NOT managing your money well! No 🍾🥂 popping CHAMPAGNE bottles for you 🍾🥂.`;
         }
 
-
-
-        
        
         alert(outputMessage);
     };
@@ -108,13 +105,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const loginEmail = loginForm.elements['loginEmail'].value;
         const loginPassword = loginForm.elements['loginPassword'].value;
-
+       
         
         if (!loginEmail || !loginPassword) {
             alert("Please fill in all fields.");
             return;
         }
-
         
         alert("Login successful!");
     });
