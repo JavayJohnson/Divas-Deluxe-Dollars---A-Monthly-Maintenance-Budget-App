@@ -151,9 +151,9 @@ footer {
     width: 100%;
 }
 
-/* Add styling for appended paragraph */
+
 .registration-form-section p {
-    color: green; /* Ensure it matches the success message style */
-    margin-top: 15px; /* Add some spacing above the message */
+    color: purple; 
+    margin-top: 15px; 
     font-weight: bold;
 }
