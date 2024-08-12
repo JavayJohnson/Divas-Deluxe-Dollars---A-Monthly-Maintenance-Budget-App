@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Construct the output message based on the remaining balance
         let outputMessage;
         if (remainingBalance > 0) {
-            outputMessage = `${remainingBalance} You have $${remainingBalance} left! Keep slaying, Diva! You are stacking cash! Millionaire Mode!💵💵💵`;
+            outputMessage = `${remainingBalance} You have $${remainingBalance} left! Keep slaying, Diva! You are stacking cash! You are in Millionaire Mode!💵💵💵`;
         } else if (remainingBalance === 0) {
             outputMessage = `$${remainingBalance} That's What's up! You have successfully balanced your budget of $${monthlyBudget} Divas Deluxe Dollars to $${remainingBalance}! Stay beautiful Diva!`;
         } else {
-            outputMessage = `$${remainingBalance} So, you need to cut back, or either get a part-time job for real. You have gone over your monthly budget of $${monthlyBudget} You're NOT managing your money well! No 🍾🥂 popping CHAMPAGNE bottles 🍾🥂.`;
+            outputMessage = `$${remainingBalance} So, you need to cut back, or either get a part-time job for real. You have gone over your monthly budget of $${monthlyBudget} You're NOT managing your money well! No 🍾🥂 popping CHAMPAGNE bottles for you 🍾🥂.`;
         }
 
 
