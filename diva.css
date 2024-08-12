@@ -1,4 +1,4 @@
-/* Basic Reset */
+
 body, h1, p, form, input, button {
     margin: 0;
     padding: 0;
@@ -12,35 +12,35 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Arrange everything in a vertical column */
-    min-height: 100vh; /* Ensure content covers full viewport height */
+    flex-direction: column; 
+    min-height: 100vh; 
     padding: 20px;
-    text-align: center; /* Center all text elements */
+    text-align: center; 
 }
 
 .main-container {
     width: 100%;
     max-width: 1000px;
-    padding: 20px;  /* Space between the gold border and the content */
-    border: 10px solid gold;  /* Even gold border all the way around */
+    padding: 20px;  
+    border: 10px solid gold;  
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;  /* Adds space between each container */
+    gap: 20px;  
     border-radius: 8px;
 }
 
 .container {
     background-color: white;
-    padding: 20px;  /* Internal padding for content inside the hotpink border */
-    border: 5px solid hotpink;  /* Even hotpink border all the way around */
+    padding: 20px;  
+    border: 5px solid hotpink;  
     border-radius: 8px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Center content inside the container */
-    margin: 0;  /* Remove default margin */
-    box-sizing: border-box;  /* Ensure padding and border are included in the width */
+    align-items: center;  
+    margin: 0; 
+    box-sizing: border-box;  
 }
 
 header {
@@ -48,16 +48,16 @@ header {
     color: white;
     padding: 10px;
     text-align: center;
-    width: 100%; /* Ensure header takes full width */
-    margin-bottom: 20px; /* Add margin to separate header from content */
+    width: 100%; 
+    margin-bottom: 20px; 
 }
 
 .forms-section {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the forms section */
-    gap: 20px; /* Adds space between the form sections */
+    align-items: center; 
+    gap: 20px; 
 }
 
 .registration-form-section, .login-form-section, .budget-form-section {
@@ -66,8 +66,14 @@ header {
     border: 2px solid hotpink;
     border-radius: 8px;
     width: 100%;
-    max-width: 400px; /* Set a max width for all sections */
-    text-align: left; /* Align text inside form sections to the left */
+    max-width: 400px; 
+    text-align: left; 
+}
+
+.login-form-section {
+    border: 2px solid black; 
+    padding: 20px;
+    border-radius: 8px;
 }
 
 h2 {
@@ -95,15 +101,14 @@ h2 {
 }
 
 .registration-form input[type="checkbox"], .login-form input[type="checkbox"] {
-    width: auto; /* Prevent the checkbox from taking full width */
-    margin-right: 10px; /* Add space between the checkbox and the label */
+    width: auto; 
+    margin-right: 10px; 
 }
 
 .registration-form label[for="terms"], .login-form label[for="terms"] {
     display: inline-block;
-    vertical-align: middle; /* Align the checkbox with the text */
+    vertical-align: middle; 
 }
-
 
 .error-message {
     color: red;
@@ -143,32 +148,6 @@ button {
 button:hover {
     background-color: silver;
 }
-
-
-.login-form-section h2 {
-color:hotpink;
-margin-bottom: 20px;
-border: 1px solid silver;
-border-radius: 4px;
-
-}
- .login-form-section {
-    margin-bottom: 20px; /* Add margin between the login button and budget input container
-}
-
-.login-form-section h2 {
-    color: hotpink;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-
-
-
-.budget-form-section {
-    flex-direction: column;
-    align-items: center;
-} */
 
 footer {
     text-align: center;
