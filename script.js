@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Budget Form Submission
+    
     const budgetForm = document.querySelector('.budget-form');
     budgetForm.onsubmit = function(event) {
         event.preventDefault();
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Registration Form Submission
+    
     const registrationForm = document.getElementById('registrationForm');
     registrationForm.addEventListener('submit', function(event) {
         event.preventDefault();
@@ -84,19 +84,19 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        // If all validations pass
+       
         alert("Registration successful!");
 
-        // Create a new paragraph element and append it to the DOM
+      
         const newParagraph = document.createElement('p');
         newParagraph.innerText = `Welcome, ${username}! Thank you for registering.`;
 
-        // Append the new paragraph to the registration form section
+        
         const registrationSection = document.querySelector('.registration-form-section');
         registrationSection.appendChild(newParagraph);
     });
 
-    // Login Form Submission
+    
     const loginForm = document.getElementById('loginForm');
     loginForm.addEventListener('submit', function(event) {
         event.preventDefault();
